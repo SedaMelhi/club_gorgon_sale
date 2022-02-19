@@ -19,8 +19,3 @@ minus.addEventListener("click", function () {
     count.value = value - 1;
   }
 });
-$('.slick').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
-});

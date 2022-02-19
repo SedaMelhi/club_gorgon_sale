@@ -1,8 +1,10 @@
 html{
   font-size: 16px;
 }
-.header{
+body{
   background: linear-gradient(252.29deg, #000745 -0.22%, #000214 100%);
+}
+.header{
   width: 100%;
   height: 100vh;
   font-family: 'Myriad Pro', sans-serif;
@@ -13,6 +15,10 @@ html{
   }
   &__text{
     max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
   &__title{
     font-weight: 700;
@@ -113,17 +119,62 @@ html{
 
 
 
+
 .slick{
-  &__wrap{
-    width: 50%;
-    position: absolute;
-    top: 0;
-    left: 40%;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: calc(50vh - 35%);
+  width: 70%;
+  right: 0;
+  &__item{
+    text-align: center;
+    width: 60%;
+    opacity: .3;
+    &-active{
+      width: 90%;
+      opacity: 1;
+    }
   }
- &__img{
-   width: 70%;
-   &-active{
-     width: 150%;
-   }
- }
+  &__img{
+    width: inherit;
+  }
 }
+
+
+
+
+
+
+@media (max-height: 850px) {
+  html {
+    font-size: 15px;
+  }
+
+  .header {
+    &__wrap {
+      padding: 50px 170px;
+    }
+  }
+}
+ 
+  @media (max-height: 750px) {
+    html {
+      font-size: 13px;
+    }
+    .header {
+      &__wrap {
+        padding: 3.5% 7%;
+      }
+    }
+  }
+  @media (max-height: 630px) {
+    html {
+      font-size: 12px;
+    }
+    .header {
+      &__wrap {
+        padding: 3% 7%;
+      }
+    }
+  }

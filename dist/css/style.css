@@ -418,7 +418,7 @@ body {
   }
 
   .arrows {
-    width: 127%;
+    width: 130%;
     top: 50%;
   }
 
@@ -432,7 +432,7 @@ body {
   }
 
   .slick__wrap {
-    width: 65% !important;
+    width: 57% !important;
     margin: 0 auto;
     left: -5%;
   }

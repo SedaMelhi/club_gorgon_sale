@@ -24,6 +24,8 @@ let leftCount = 1
 let rightCount = 1
 let index = 2
 
+
+
 left.addEventListener('click', function(){
     if(leftCount < 2){
         let bg = document.querySelector(`.bg-${index}`)
@@ -77,36 +79,3 @@ right.addEventListener('click', function(){
     }
    
 })
-/** 
-left.addEventListener('click', function(){
-    if (leftCount < 2){
-        let active = document.querySelector(".slick__item-active")
-        let leftImg = document.querySelector(".slick__item-left")
-        let rightImg = document.querySelector(".slick__item-right")
-        leftImg.classList.add("slide-pink-left")
-        active.classList.add("slide-blue-left")
-        rightImg.classList.add("slide-red-left")
-        leftCount++
-        rightCount--
-    }
-    
-})
-
-right.addEventListener('click', function(){
-    if(rightCount < 2){
-        let active = document.querySelector(".slick__item-active")
-        let leftImg = document.querySelector(".slick__item-left")
-        let rightImg = document.querySelector(".slick__item-right")
-        leftImg.classList.add("slide-pink-right")
-        active.classList.add("slide-blue-right")
-        rightImg.classList.add("slide-red-right")
-        active.classList.remove("slick__item-active")
-        leftImg.classList.remove("slick__item-left")
-        active.classList.add("slick__item-left")
-        rightImg.classList.add("slick__item-active")
-        leftCount--
-        rightCount++
-    }
-    
-})
-*/

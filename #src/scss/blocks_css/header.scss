@@ -69,8 +69,11 @@ body{
   font-family: 'Myriad Pro', sans-serif;
   overflow-x: hidden;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   &__wrap{
-    padding: 140px 190px;
+    padding: 0 190px;
     position: relative;
   }
  
@@ -198,7 +201,7 @@ body{
 .slick{
   &__wrap{
     position: absolute;
-    top: calc(54vh);
+    top: 50%;
     right: -300px;
     width: 70%;
   }
@@ -280,7 +283,7 @@ body{
 
   .header {
     &__wrap {
-      padding: 50px 170px;
+      padding: 0 170px;
     }
   }
 }
@@ -291,7 +294,7 @@ body{
     }
     .header {
       &__wrap {
-        padding: 3.5% 7%;
+        padding: 0 7%;
       }
     }
   }
@@ -301,7 +304,7 @@ body{
     }
     .header {
       &__wrap {
-        padding: 3% 7%;
+        padding: 0 7%;
         
       }
 
@@ -317,10 +320,79 @@ body{
 }
 
 @media (max-width: 800px) {
+  
   .header__images_mobile{
     display: block;
   }
   .header__images_pc{
     display: none;
+  }
+  .slick__wrap{
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .arrows{
+    width: 130%;
+    top: 50%;
+    img{
+      width: 15px;
+    }
+  }
+  .slick{
+    &__height{
+      width: 90%;
+      visibility: hidden;
+    }
+    &__wrap{
+      width: 50%!important;
+      margin: 0 auto;
+      left: -5%;
+    }
+    &__item{
+      width: 100%; 
+      top:0;
+      &-active{
+        transform: scale(1);
+        z-index: 2;
+      }
+      &-left{
+        transform: scale(0.6) translate(-100%);
+      }
+      &-right{
+        transform: scale(0.6) translate(100%);
+      }
+    }
+  }
+
+  .header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &__wrap{
+      padding: 0 10%!important;
+    }
+    &__title{
+      font-size: 4rem;
+    }
+    &__subtitle{
+      font-size: 2rem;
+    }
+  }
+  .price__text{
+    font-size: 2rem;
+  }
+  .price__subtitle{
+    img{
+      width: 20px;
+    }
+  }
+  .form__warning{
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  .mint{
+    margin-top: 1.7rem;
+    width: 100%;
   }
 }

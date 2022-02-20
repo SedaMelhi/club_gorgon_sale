@@ -403,6 +403,11 @@ body {
 }
 
 @media (max-width: 800px) {
+  html,
+  body {
+    height: 100%;
+  }
+
   .header__images_mobile {
     display: block;
   }
@@ -472,6 +477,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100%;
   }
 
   .header__wrap {

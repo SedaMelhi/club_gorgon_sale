@@ -140,13 +140,16 @@ body{
   &__minus{
     line-height: 40px;
     position: absolute;
-    left: 16px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    left: 0px;
+    padding-left: 16px;
     cursor: pointer;
     width: 40%;
   }
   &__plus{
     line-height: 40px;
     position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     right: -16px;
     cursor: pointer;
     width: 40%;
@@ -192,9 +195,11 @@ body{
   margin: auto;
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
+  cursor: pointer; 
+  user-select: none;
   img{
     width: 25px;
+    user-select: none;
   }
 }
 
@@ -337,8 +342,12 @@ body{
   .arrows{
     width: 130%;
     top: 50%;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     img{
       width: 15px;
+      user-select: none;
+      outline: none;
     }
   }
   .slick{

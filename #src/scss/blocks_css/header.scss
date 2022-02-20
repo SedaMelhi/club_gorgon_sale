@@ -24,7 +24,15 @@ body{
 .bg-1{
   background: linear-gradient(252.29deg, #400045 -0.22%, #14000A 100%);
   .snake{
-    background: url(../img/snake2.png) center/contain;
+    background: url(../img/snake2.png)  no-repeat;
+    background-position: -50px -200px;
+    background-size: 35%;
+    opacity: .3;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left:0;
   }
   .header{
     &__title{
@@ -43,7 +51,15 @@ body{
 .bg-3{
   background: linear-gradient(252.29deg, #450000 -0.22%, #140000 100%);
   .snake{
-    background: url(../img/snake2.png) center/contain;
+    background: url(../img/snake3.png) no-repeat;
+    background-position: -50px -200px;
+    background-size: 35%;
+    opacity: .3;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left:0;
   }
   .header{
     &__title{
